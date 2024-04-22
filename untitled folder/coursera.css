@@ -1,0 +1,16 @@
+body {
+  padding: 5px;
+  margin: 2px;
+}
+header {
+  background-image: url(https://intro-webdesign.com/CSS/assignment-2/images/flywheel.jpg);
+  background-color: aqua;
+  padding: 5px;
+}
+nav > a {
+  display: outside;
+  margin: 4px;
+  border-radius: 50%;
+  text-decoration: underline;
+  padding: 5px;
+}
