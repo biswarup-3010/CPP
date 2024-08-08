@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rotate Buttons</title>
+    <style>
+      img {
+        transition: transform 0.5s; /* add a smooth transition effect */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rotate Buttons</h1>
+    <button onclick="rotateRight()">+90</button>
+    <button onclick="rotateLeft()">-90</button>
+    <button onclick="resetRotation()">Reset</button>
+    <img id="image" src="your_image_url_here" alt="Image to rotate" />
+
+    <script>
+      let currentRotation = 0; // keep track of the current rotation
+
+      function rotateRight() {
+        currentRotation += 90;
+        document.getElementById(
+          "image"
+        ).style.transform = `rotate(${currentRotation}deg)`;
+      }
+
+      function rotateLeft() {
+        currentRotation -= 90;
+        document.getElementById(
+          "image"
+        ).style.transform = `rotate(${currentRotation}deg)`;
+      }
+
+      function resetRotation() {
+        currentRotation = 0;
+        document.getElementById(
+          "image"
+        ).style.transform = `rotate(${currentRotation}deg)`;
+      }
+    </script>
+  </body>
+</html>
